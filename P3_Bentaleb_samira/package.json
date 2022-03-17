@@ -1,0 +1,15 @@
+{
+    "name": "p3_bentaleb_samira",
+    "version": "1.0.0",
+    "description": "Création du site Ohmyfood! Paris",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    },
+    "keywords": [],
+    "author": "samira",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.49.9"
+    }
+}
