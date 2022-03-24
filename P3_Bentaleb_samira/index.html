@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <link rel="icon" type="image/png" href="assets/logo/ohmyfood.png" />
 
 </head>
@@ -21,6 +20,7 @@
 
     <!-- Header -->
     <header>
+        <div class="navbar"></div>
         <img src="assets/images/logo/ohmyfood.png">
     </header>
 
@@ -40,7 +40,7 @@
         <div>
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <span>
+            <span class="btn">
                 <button>Explorer nos restaurants</button>
             </span>
         </div>
@@ -80,8 +80,7 @@
 
                     <a href="pages/lapalette-dugout.html">
                         <figure>
-                            <img src="assets/images/restaurants/palette-du-gout.jpg"
-                                alt="restaurant la palette du gout">
+                            <img src="assets/images/restaurants/palette-du-gout.jpg" alt="restaurant la palette du gout">
                             <figcaption>
                                 <div>
                                     <h4>La palette du goût</h4>
@@ -102,8 +101,7 @@
 
                         <a href="pages/la-noteenchante.html">
                             <figure>
-                                <img src="assets/images/restaurants/note-enchantee.jpg"
-                                    alt="restaurant la note enchantee">
+                                <img src="assets/images/restaurants/note-enchantee.jpg" alt="restaurant la note enchantee">
                                 <figcaption>
                                     <div>
                                         <h4>La note enchantée</h4>
@@ -144,8 +142,7 @@
 
                         <a href="pages/delice-dessens.html">
                             <figure>
-                                <img src="assets/images/restaurants/delice-des-sens.jpg"
-                                    alt="Restaurant Le délice des sens">
+                                <img src="assets/images/restaurants/delice-des-sens.jpg" alt="Restaurant Le délice des sens">
                                 <figcaption>
                                     <div>
                                         <h4>Le délice des sens</h4>
@@ -163,10 +160,10 @@
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="footer">
         <h3>ohmyfood</h3>
-        <ul>
-            <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+        <ul class="footer_link">
+            <li><a href="index.html"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
             <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
