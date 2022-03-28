@@ -1,0 +1,37 @@
+.research {
+    background-color: $ligntGray;
+    text-align: center;
+    width: 100%;
+    input {
+        background-color: $ligntGray;
+        height: 70px;
+        border: none;
+    }
+}
+
+.description {
+    background-color: $gainsboro;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    p {
+        font-weight: 300;
+        padding: 15px;
+    }
+}
+
+.fonctionnement {
+    text-align: center;
+    // .number {
+    //     border-radius: 50%;
+    //     background-color: $primary;
+    // }
+    .bloc {
+        text-align: center;
+        padding: 30px;
+        margin: 15px;
+        background-color: $gainsboro;
+        width: 30%;
+        border-radius: 15px;
+    }
+}
