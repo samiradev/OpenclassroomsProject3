@@ -21,17 +21,46 @@
 }
 
 .fonctionnement {
-    text-align: center;
-    // .number {
-    //     border-radius: 50%;
-    //     background-color: $primary;
-    // }
-    .bloc {
+    .title_fonctionnement {
         text-align: center;
-        padding: 30px;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .bloc {
+        padding: 20px;
         margin: 15px;
         background-color: $gainsboro;
-        width: 30%;
+        width: 400px;
         border-radius: 15px;
+        box-shadow: 0 5px 15px $black;
+    }
+    .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        border-radius: 50%;
+        background-color: $primary;
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+        text-align: center;
+        align-items: center;
+        color: $white;
+        position: absolute;
+    }
+    i {
+        color: grey;
+        padding: 20px;
+        font-size: 20px;
+    }
+    span {
+        font-size: 16px;
+        color: $black;
+        font-weight: bold;
     }
 }

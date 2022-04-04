@@ -400,16 +400,47 @@ h2 h3 {
   padding: 15px;
 }
 
-.fonctionnement {
+.fonctionnement .title_fonctionnement {
   text-align: center;
 }
+.fonctionnement ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 .fonctionnement .bloc {
-  text-align: center;
-  padding: 30px;
+  padding: 20px;
   margin: 15px;
   background-color: #f6f6f6;
-  width: 30%;
+  width: 400px;
   border-radius: 15px;
+  box-shadow: 0 5px 15px #000000;
+}
+.fonctionnement .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fonctionnement .content {
+  border-radius: 50%;
+  background-color: #9356DC;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+  color: #FFFFFF;
+  position: absolute;
+}
+.fonctionnement i {
+  color: grey;
+  padding: 20px;
+  font-size: 20px;
+}
+.fonctionnement span {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
 }
 
 .btn {
