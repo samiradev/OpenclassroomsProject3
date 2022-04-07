@@ -373,6 +373,11 @@ h2 h3 {
     transform: rotate(360deg);
   }
 }
+@keyframes loader {
+  100% {
+    opacity: 0;
+  }
+}
 .footer {
   background-color: #353535;
   color: #FFFFFF;
@@ -451,6 +456,25 @@ h2 h3 {
   font-weight: bold;
 }
 
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 5px;
+}
+.restaurant h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.restaurant .menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.restaurant .menu img {
+  cursor: pointer;
+  width: 47%;
+  border-radius: 15px;
+}
+
 .btn {
   border: none;
   border-radius: 15px;
@@ -469,10 +493,12 @@ h2 h3 {
   position: fixed;
   z-index: 1;
   animation: off;
-  animation-duration: 3s;
+  animation: loader 0.2s;
+  animation-duration: 0.3s;
   transition: opacity 3s ease-in-out;
   animation-delay: 1.75s;
   animation-fill-mode: both;
+  opacity: 0.9;
 }
 .page .loader {
   align-items: center;
