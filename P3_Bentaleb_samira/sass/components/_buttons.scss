@@ -6,5 +6,9 @@
     font-weight: 800;
     font-size: 16px;
     padding: 17px;
-    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.15);
+    }
 }
