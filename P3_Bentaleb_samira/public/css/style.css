@@ -95,12 +95,14 @@ h2 h3 {
   flex-direction: row;
 }
 .fonctionnement .bloc {
-  padding: 20px;
-  margin: 15px;
+  font-size: 20px;
+  padding: 25px;
+  margin: 25px;
   background-color: #f6f6f6;
-  width: 400px;
+  width: 450px;
+  cursor: pointer;
   border-radius: 15px;
-  box-shadow: 0 5px 15px #000000;
+  box-shadow: 0 5px 5px gray;
 }
 .fonctionnement .bloc:hover {
   background-color: #f5edff;
@@ -110,7 +112,7 @@ h2 h3 {
 }
 .fonctionnement .number {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 .fonctionnement .content {
@@ -126,7 +128,7 @@ h2 h3 {
 }
 .fonctionnement i {
   color: grey;
-  padding: 20px;
+  padding: 15px;
   font-size: 20px;
 }
 .fonctionnement span {
@@ -136,7 +138,7 @@ h2 h3 {
 }
 
 .restaurant {
-  background-color: #f6f6f6;
+  background-color: #eaeaea;
   padding: 20px;
   margin: 5px;
 }
@@ -147,11 +149,52 @@ h2 h3 {
 .restaurant .menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #eaeaea;
 }
-.restaurant .menu img {
+.restaurant .menu .card {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.restaurant .menu .card__new {
+  background-color: #99E2D0;
+  color: #038868;
+  padding: 10px;
+  position: relative;
+  left: 80%;
+  top: 10px;
+  height: 30px;
+}
+.restaurant .menu .card figure {
+  background-color: #FFFFFF;
+  width: 100%;
+  border-radius: 25px 25px 25px 25px;
+}
+.restaurant .menu .card figure img {
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
+  height: 80%;
+  margin-top: 0px;
+  padding: 0;
   cursor: pointer;
-  width: 85%;
-  border-radius: 15px;
+}
+.restaurant .menu .card figure figcaption {
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 0 5px #eaeaea;
+  margin: 0;
+  padding: 20px;
+}
+.restaurant .menu .card .fa-heart {
+  position: relative;
+  left: 90%;
+}
+.restaurant .menu .card .fa-heart:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  animation: fill 0.5s ease-in-out;
 }
 
 .btn {
@@ -159,6 +202,7 @@ h2 h3 {
   border-radius: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
+  cursor: pointer;
   font-weight: 800;
   font-size: 16px;
   padding: 17px;
