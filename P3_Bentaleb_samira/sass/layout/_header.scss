@@ -1,0 +1,25 @@
+// Entête des pages
+.headerpage {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1440px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    &__arrow {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 25px;
+        a {
+            color: black;
+        }
+    }
+    &__title {
+        a {
+            font-family: "Shrikhand", sans-serif;
+            color: black;
+            font-size: 30px;
+        }
+    }
+}

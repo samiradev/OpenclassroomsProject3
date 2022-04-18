@@ -64,6 +64,29 @@ h2 h3 {
   color: #FFFFFF;
 }
 
+.headerpage {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 1440px;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+.headerpage__arrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 25px;
+}
+.headerpage__arrow a {
+  color: black;
+}
+.headerpage__title a {
+  font-family: "Shrikhand", sans-serif;
+  color: black;
+  font-size: 30px;
+}
+
 .research {
   background-color: #eaeaea;
   text-align: center;
@@ -86,15 +109,16 @@ h2 h3 {
   padding: 15px;
 }
 
-.fonctionnement .title_fonctionnement {
+.fonctionnement__title {
   text-align: center;
+  padding: 20px;
 }
 .fonctionnement ul {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.fonctionnement .bloc {
+.fonctionnement__bloc {
   font-size: 20px;
   padding: 25px;
   margin: 25px;
@@ -102,20 +126,20 @@ h2 h3 {
   width: 450px;
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: 0 5px 5px gray;
+  box-shadow: 0 5px 5px #0000002e;
 }
-.fonctionnement .bloc:hover {
+.fonctionnement__bloc:hover {
   background-color: #f5edff;
 }
-.fonctionnement .bloc:hover i {
+.fonctionnement__bloc:hover i {
   color: #9356DC;
 }
-.fonctionnement .number {
+.fonctionnement__number {
   display: flex;
   justify-content: left;
   align-items: center;
 }
-.fonctionnement .content {
+.fonctionnement__number--content {
   border-radius: 50%;
   background-color: #9356DC;
   width: 50px;
@@ -123,7 +147,7 @@ h2 h3 {
   padding: 15px;
   text-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   position: absolute;
 }
 .fonctionnement i {
@@ -137,6 +161,23 @@ h2 h3 {
   font-weight: bold;
 }
 
+@media (max-width: 1025px) {
+  .fonctionnement__title {
+    text-align: left;
+    padding: 20px;
+  }
+  .fonctionnement ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .fonctionnement__number {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}
 .restaurant {
   background-color: #eaeaea;
   padding: 20px;
@@ -183,18 +224,6 @@ h2 h3 {
   box-shadow: 0 5px #eaeaea;
   margin: 0;
   padding: 20px;
-}
-.restaurant .menu .card .fa-heart {
-  position: relative;
-  left: 90%;
-}
-.restaurant .menu .card .fa-heart:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-  font-weight: bold;
-  animation: fill 0.5s ease-in-out;
 }
 
 .btn {
