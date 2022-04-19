@@ -1,0 +1,105 @@
+/*Animation loader*/
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    0% {
+        border-top-color: $primary;
+    }
+    25% {
+        border-top-color: $mediumPurpule;
+    }
+    50% {
+        border-top-color: $secondary;
+    }
+    100% {
+        border-top-color: $tertiare;
+    }
+}
+
+@keyframes loader {
+    from {
+        opacity: 90%;
+    }
+    to {
+        z-index: -1;
+        display: none;
+        opacity: 0%;
+    }
+}
+
+
+/*Animation heart*/
+
+@keyframes fill {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*Animation du défilement du menu des pages*/
+
+@keyframes check {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.appearance {
+    &-1 {
+        animation-delay: 0.1s;
+    }
+    &-2 {
+        animation-delay: 0.2s;
+    }
+    &-3 {
+        animation-delay: 0.3s;
+    }
+    &-4 {
+        animation-delay: 0.4s;
+    }
+    &-5 {
+        animation-delay: 0.5s;
+    }
+    &-6 {
+        animation-delay: 0.6s;
+    }
+    &-7 {
+        animation-delay: 0.7s;
+    }
+    &-8 {
+        animation-delay: 0.8s;
+    }
+    &-9 {
+        animation-delay: 0.9s;
+    }
+    &-10 {
+        animation-delay: 1s;
+    }
+}
