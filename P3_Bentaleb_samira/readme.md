@@ -1,4 +1,4 @@
-
+projet 3 de parcours developpeur web: Dynamisez une page web avec des animations CSS
 Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
 utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les
 restaurants car leur menu est préparé à l’avance. 
@@ -52,3 +52,5 @@ Cela fait apparaître une petite coche à droite du plat. Cette coche devra coul
 la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol
 sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
 des points de suspension. Un exemple de l’effet attendu est fourni.
+
+le site est développé en utilisant l’approche mobile-first.
