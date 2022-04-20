@@ -1,15 +1,39 @@
 .btn {
     border: none;
-    border-radius: 15px;
+    border-radius: 30px;
     background: linear-gradient($secondary, $primary);
     color: white;
     cursor: pointer;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 16px;
-    padding: 17px;
+    padding: 15px 35px 15px 35px;
     transform: scale(1);
     transition: transform 0.3s;
     &:hover {
         transform: scale(1.15);
+        filter: brightness(1.5);
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
     }
+}
+
+//heart
+.fill {
+    position: relative;
+    left: 90%;
+    &:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from($primary), to($secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        font-weight: bold;
+        animation: fill 3s ease-in-out;
+        transition-duration: 3s;
+    }
+}
+
+.btncommand {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
 }

@@ -1,3 +1,4 @@
+//Rechercher
 .research {
     background-color: $ligntGray;
     text-align: center;
@@ -9,6 +10,7 @@
     }
 }
 
+//Description
 .description {
     background-color: $gainsboro;
     text-align: center;
@@ -20,25 +22,26 @@
     }
 }
 
-//fonctionnement
+//Fonctionnement
 .fonctionnement {
     &__title {
-        text-align: center;
+        text-align: left;
         padding: 20px;
     }
     ul {
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     &__bloc {
         font-size: 20px;
         padding: 25px;
         margin: 25px;
         background-color: $gainsboro;
-        width: 450px;
+        width: 90%;
         cursor: pointer;
-        border-radius: 15px;
+        border-radius: 20px;
         box-shadow: 0 5px 5px $shadow;
         &:hover {
             background-color: $mediumPurpule;
@@ -61,6 +64,7 @@
             align-items: center;
             color: $white !important;
             position: absolute;
+            margin-top: 140px;
         }
     }
     i {
@@ -75,27 +79,25 @@
     }
 }
 
-@media (max-width: 1025px) {
+//Responsive du fonctionnement
+@media (min-width: 1025px) {
     .fonctionnement {
         &__title {
-            text-align: left;
-            padding: 20px;
+            text-align: center;
         }
         ul {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
         }
         &__number {
-            display: flex;
-            justify-content: left;
-            align-items: center;
+            &--content {
+                margin-top: 0px;
+            }
         }
     }
 }
 
-//restaurant
+//Restaurant
 .restaurant {
     background-color: $ligntGray;
     padding: 20px;
@@ -106,7 +108,7 @@
     }
     .menu {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         background-color: $ligntGray;
         .card {
             display: flex;
@@ -140,6 +142,14 @@
                     padding: 20px;
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .restaurant {
+        .menu {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
