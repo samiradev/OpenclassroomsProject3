@@ -1,5 +1,4 @@
-/*Animation loader*/
-
+//Animation loader
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -32,9 +31,7 @@
     }
 }
 
-
-/*Animation heart*/
-
+//Animation heart
 @keyframes fill {
     0% {
         opacity: 0;
