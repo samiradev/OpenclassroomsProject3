@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +27,7 @@ h2 h3 {
   font-weight: 400;
 }
 
+/*Animation loader*/
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -47,10 +49,79 @@ h2 h3 {
   }
 }
 @keyframes loader {
-  100% {
-    opacity: 0;
+  from {
+    opacity: 90%;
+  }
+  to {
+    z-index: -1;
+    display: none;
+    opacity: 0%;
   }
 }
+/*Animation heart*/
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Animation du défilement du menu des pages*/
+@keyframes check {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.appearance-1 {
+  animation-delay: 0.1s;
+}
+.appearance-2 {
+  animation-delay: 0.2s;
+}
+.appearance-3 {
+  animation-delay: 0.3s;
+}
+.appearance-4 {
+  animation-delay: 0.4s;
+}
+.appearance-5 {
+  animation-delay: 0.5s;
+}
+.appearance-6 {
+  animation-delay: 0.6s;
+}
+.appearance-7 {
+  animation-delay: 0.7s;
+}
+.appearance-8 {
+  animation-delay: 0.8s;
+}
+.appearance-9 {
+  animation-delay: 0.9s;
+}
+.appearance-10 {
+  animation-delay: 1s;
+}
+
 .footer {
   background-color: #353535;
   color: #FFFFFF;
@@ -76,7 +147,7 @@ h2 h3 {
   position: absolute;
   left: 20px;
   top: 20px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .headerpage__arrow a {
   color: black;
@@ -110,22 +181,23 @@ h2 h3 {
 }
 
 .fonctionnement__title {
-  text-align: center;
+  text-align: left;
   padding: 20px;
 }
 .fonctionnement ul {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .fonctionnement__bloc {
   font-size: 20px;
   padding: 25px;
   margin: 25px;
   background-color: #f6f6f6;
-  width: 450px;
+  width: 90%;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 5px 5px #0000002e;
 }
 .fonctionnement__bloc:hover {
@@ -149,6 +221,7 @@ h2 h3 {
   align-items: center;
   color: #FFFFFF !important;
   position: absolute;
+  margin-top: 140px;
 }
 .fonctionnement i {
   color: grey;
@@ -161,21 +234,16 @@ h2 h3 {
   font-weight: bold;
 }
 
-@media (max-width: 1025px) {
+@media (min-width: 1025px) {
   .fonctionnement__title {
-    text-align: left;
-    padding: 20px;
+    text-align: center;
   }
   .fonctionnement ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
-  .fonctionnement__number {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  .fonctionnement__number--content {
+    margin-top: 0px;
   }
 }
 .restaurant {
@@ -189,7 +257,7 @@ h2 h3 {
 }
 .restaurant .menu {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   background-color: #eaeaea;
 }
 .restaurant .menu .card {
@@ -226,20 +294,295 @@ h2 h3 {
   padding: 20px;
 }
 
+@media (min-width: 1025px) {
+  .restaurant .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.heading {
+  display: flex;
+  justify-content: center;
+}
+.heading__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  height: 35vh;
+}
+
+.contain {
+  width: 100%;
+  position: relative;
+  top: -40px;
+}
+
+.principal__page {
+  background-color: #eaeaea;
+  border-radius: 30px 30px 0px 0px;
+  padding-bottom: 40px;
+}
+.principal__page--title {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.principal__page--title h1 {
+  font-family: "shrikhand";
+  font-size: 35px;
+}
+.principal__page--title i {
+  font-size: 32px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+.heading__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  height: 35vh;
+}
+
+.contain {
+  width: 100%;
+  position: relative;
+  top: -40px;
+}
+
+.principal__page {
+  background-color: #eaeaea;
+  border-radius: 30px 30px 0px 0px;
+  padding-bottom: 40px;
+}
+.principal__page--title {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.principal__page--title h1 {
+  font-family: "shrikhand";
+  font-size: 35px;
+}
+.principal__page--title i {
+  font-size: 32px;
+}
+
+.case__menu__title {
+  border-bottom: 3px solid #99E2D0;
+  width: 10%;
+  margin: 25px 0px 10px 30px;
+  padding-bottom: 5px;
+  font-weight: lighter;
+}
+.case__list {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  width: 90%;
+  margin: 15px auto;
+  box-shadow: 0 5px 16px #0000002e;
+  animation-duration: 1s;
+  animation-name: check;
+  transform: scale(0);
+  animation-fill-mode: both;
+  transform: rotate(0turn);
+}
+.case__main {
+  display: flex;
+}
+.case__main:hover .case__check {
+  width: 80px;
+  border-radius: 0px 10px 10px 0px;
+}
+.case__main:hover .case__main__left {
+  transform-origin: right 100%;
+  width: calc(100% - 70px);
+}
+.case__main:hover .fa-check-circle {
+  transform: rotate(2turn);
+  transition: transform 300ms ease-in-out;
+  color: #FFFFFF;
+}
+.case__main__title {
+  font-weight: bold;
+  font-size: 15px;
+}
+.case__main__left {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+}
+.case__main__details {
+  display: flex;
+  padding-top: 10px;
+}
+.case__main__details__subtitle {
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.case__main__details__price {
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
+}
+.case__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.7s ease;
+  height: 100%;
+  width: 0px;
+  background: #99E2D0;
+  color: #99E2D0;
+}
+
+.case__menu__title {
+  border-bottom: 3px solid #99E2D0;
+  width: 10%;
+  margin: 25px 0px 10px 30px;
+  padding-bottom: 5px;
+  font-weight: lighter;
+}
+.case__list {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  width: 90%;
+  margin: 15px auto;
+  box-shadow: 0 5px 16px #0000002e;
+  animation-duration: 1s;
+  animation-name: check;
+  transform: scale(0);
+  animation-fill-mode: both;
+  transform: rotate(0turn);
+}
+.case__main {
+  display: flex;
+}
+.case__main:hover .case__check {
+  width: 80px;
+  border-radius: 0px 10px 10px 0px;
+}
+.case__main:hover .case__main__left {
+  transform-origin: right 100%;
+  width: calc(100% - 70px);
+}
+.case__main:hover .fa-check-circle {
+  transform: rotate(2turn);
+  transition: transform 300ms ease-in-out;
+  color: #FFFFFF;
+}
+.case__main__title {
+  font-weight: bold;
+  font-size: 15px;
+}
+.case__main__left {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+}
+.case__main__details {
+  display: flex;
+  padding-top: 10px;
+}
+.case__main__details__subtitle {
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.case__main__details__price {
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
+}
+.case__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.7s ease;
+  height: 100%;
+  width: 0px;
+  background: #99E2D0;
+  color: #99E2D0;
+}
+
 .btn {
   border: none;
-  border-radius: 15px;
+  border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   cursor: pointer;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 16px;
-  padding: 17px;
+  padding: 15px 35px 15px 35px;
   transform: scale(1);
   transition: transform 0.3s;
 }
 .btn:hover {
   transform: scale(1.15);
+  filter: brightness(1.5);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.fill {
+  position: relative;
+  left: 90%;
+}
+.fill:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  animation: fill 3s ease-in-out;
+  transition-duration: 3s;
+}
+
+.btncommand {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.page {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  animation: loader;
+  animation-duration: 5s;
+  transition: opacity 0.3s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: both;
+  opacity: 0.9;
+}
+.page .loader {
+  align-items: center;
+  justify-content: center;
+  border: solid 17px #eaeaea;
+  border-radius: 50%;
+  z-index: 1;
+  width: 167px;
+  height: 167px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-color: #9356DC;
+  animation: rotate linear infinite;
+  animation-duration: 7s;
 }
 
 /*# sourceMappingURL=style.css.map */

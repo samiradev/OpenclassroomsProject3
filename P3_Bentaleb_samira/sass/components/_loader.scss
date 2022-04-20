@@ -4,8 +4,7 @@
     height: 100vh;
     position: fixed;
     z-index: 1;
-    animation: off;
-    animation: loader 5s;
+    animation: loader;
     animation-duration: 5s;
     transition: opacity 0.3s ease-in-out;
     animation-delay: 7s;
@@ -14,7 +13,7 @@
     .loader {
         align-items: center;
         justify-content: center;
-        border: solid 17px lightgrey;
+        border: solid 17px $ligntGray;
         border-radius: 50%;
         z-index: 1;
         width: 167px;
@@ -24,6 +23,6 @@
         margin-right: auto;
         border-top-color: $primary;
         animation: rotate linear infinite;
-        animation-duration: 10s;
+        animation-duration: 7s;
     }
 }
