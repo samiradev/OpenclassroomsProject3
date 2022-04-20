@@ -1,23 +1,21 @@
-@mixin for-tablet-portrait-up {
-    @media (min-width: 600px) {
-        @content;
+// Responsive des  pages 
+@media (min-width: 1025px) {
+    .heading {
+        &__image {
+            height: 40vh;
+        }
     }
-}
-
-@mixin for-tablet-landscape-up {
-    @media (min-width: 900px) {
-        @content;
+    .principal {
+        &__page {
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+        }
     }
-}
-
-@mixin for-desktop-up {
-    @media (min-width: 1200px) {
-        @content;
-    }
-}
-
-@mixin for-big-desktop-up {
-    @media (min-width: 1800px) {
-        @content;
+    .case {
+        display: flex;
+        &__menu {
+            width: calc(33% - 3px);
+        }
     }
 }
